@@ -184,3 +184,29 @@ th {
 body[data-theme='dark'] th {
   background: #374151;
 }
+
+.auth-tabs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+.auth-tabs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.auth-tabs button {
+  background: #2563eb;
+}
+
+.auth-tabs button.selected {
+  background: #111827;
+}

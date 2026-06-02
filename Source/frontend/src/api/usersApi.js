@@ -10,3 +10,9 @@ export function createUser(payload) {
     body: JSON.stringify(payload),
   });
 }
+
+export function deleteUser(id) {
+  return request(`/users/${id}`, {
+    method: 'DELETE',
+  });
+}
