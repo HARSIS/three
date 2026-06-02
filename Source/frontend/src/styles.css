@@ -1,0 +1,186 @@
+:root {
+  font-family: Arial, sans-serif;
+  color: #1f2937;
+  background: #f3f4f6;
+}
+
+body[data-theme='dark'] {
+  color: #e5e7eb;
+  background: #111827;
+}
+
+body {
+  margin: 0;
+}
+
+button, input, select {
+  font: inherit;
+}
+
+button {
+  border: 0;
+  border-radius: 8px;
+  padding: 9px 12px;
+  cursor: pointer;
+  background: #2563eb;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button.active, button.selected {
+  background: #111827;
+}
+
+button.danger {
+  background: #dc2626;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 28px;
+  background: white;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+body[data-theme='dark'] .navbar,
+body[data-theme='dark'] .panel,
+body[data-theme='dark'] .auth-card {
+  background: #1f2937;
+}
+
+.subtitle {
+  margin-left: 12px;
+  color: #6b7280;
+}
+
+nav {
+  display: flex;
+  gap: 10px;
+}
+
+.auth-card {
+  max-width: 420px;
+  margin: 80px auto;
+  padding: 28px;
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.12);
+}
+
+.auth-card form, .user-form, .inline-form {
+  display: grid;
+  gap: 10px;
+}
+
+input, select {
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 10px 12px;
+}
+
+.page-grid {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 24px;
+  padding: 24px;
+}
+
+.panel {
+  background: white;
+  border-radius: 18px;
+  padding: 22px;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.08);
+}
+
+.panel.wide {
+  min-height: 600px;
+}
+
+.panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tree-selector {
+  display: grid;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.tree-list, .tree-list ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.node-row {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  margin: 8px 0;
+  padding: 10px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+}
+
+.node-content {
+  flex: 1;
+}
+
+.node-content p {
+  margin: 4px 0 0;
+  color: #6b7280;
+}
+
+.toggle {
+  width: 36px;
+  padding: 8px 0;
+  background: #6b7280;
+}
+
+.search {
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 14px;
+}
+
+.error {
+  background: #fee2e2;
+  color: #991b1b;
+  border-radius: 8px;
+  padding: 10px 12px;
+  margin: 10px 0;
+}
+
+.empty {
+  color: #6b7280;
+}
+
+.users-panel {
+  margin: 24px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 18px;
+}
+
+th, td {
+  border: 1px solid #e5e7eb;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background: #f9fafb;
+}
+
+body[data-theme='dark'] th {
+  background: #374151;
+}

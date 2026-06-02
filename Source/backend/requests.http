@@ -1,0 +1,49 @@
+### Login as admin
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+  "email": "admin@example.com",
+  "password": "password"
+}
+
+### Required endpoint: create user
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "name": "Тестовый пользователь",
+  "email": "test@example.com",
+  "age": 20,
+  "password": "password",
+  "role": "VIEWER"
+}
+
+### Required endpoint: get all users
+GET http://localhost:3000/users
+Authorization: Bearer {{token}}
+
+### Required endpoint: get user by id
+GET http://localhost:3000/users/1
+Authorization: Bearer {{token}}
+
+### Get trees
+GET http://localhost:3000/trees
+Authorization: Bearer {{token}}
+
+### Get nested tree
+GET http://localhost:3000/trees/1/nested
+Authorization: Bearer {{token}}
+
+### Create node
+POST http://localhost:3000/tree-nodes
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "treeId": 1,
+  "parentId": 2,
+  "title": "B-дерево",
+  "content": "Сбалансированное дерево поиска для внешней памяти",
+  "sortOrder": 4
+}
